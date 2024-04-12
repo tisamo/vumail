@@ -22,6 +22,7 @@ export const userStore = defineStore({
                 this.$state.isLoggedIn = true;
             }).catch(()=>{
                 this.$state.isLoggedIn = false;
+                localStorage.removeItem('token');
             });
         }
 
