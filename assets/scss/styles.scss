@@ -1,0 +1,57 @@
+@import 'breakpoints';
+:root{
+  font-size: 12px;
+}
+
+html,body, #__nuxt, #__layout{
+  height:100%!important;
+  width: 100%!important;
+}
+
+
+
+.ProseMirror{
+  padding: 30px;
+  blockquote{
+    border: 5px blue solid;
+  }
+  ol{
+    list-style: initial;
+    li{
+      &::marker{
+        font-size: 1rem;
+      }
+    }
+  }
+ min-height: 300px;
+  h1{
+    font-size:5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size:2rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+}
+
+.relative{
+  font-size:1rem;
+}
