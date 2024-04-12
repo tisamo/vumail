@@ -120,7 +120,7 @@ export default {
         this.templates = res.data.map((r)=>{
           return{
             title: r.title,
-            body: r.body
+            body: r.body,
           }
         });
       })

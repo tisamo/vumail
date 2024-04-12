@@ -9,6 +9,17 @@ html,body, #__nuxt, #__layout{
 }
 
 
+h1{
+  font-size:5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  @include smaller(md){
+    font-size: 3rem;
+  }
+  @include smaller(sm){
+    font-size: 2.5rem;
+  }
+}
 
 .ProseMirror{
   padding: 30px;
@@ -24,10 +35,9 @@ html,body, #__nuxt, #__layout{
     }
   }
  min-height: 300px;
-  h1{
-    font-size:5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+  h2 {
+    font-size: 4.5rem;
   }
 
   h2 {

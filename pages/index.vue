@@ -1,7 +1,5 @@
 <template>
-  <section>
-    <TemplateCard v-for="(c, index) in templateCards"  :key="index" :cardData="c"/>
-  </section>
+
 </template>
 
 <script>
@@ -11,25 +9,6 @@ definePageMeta({
   middleware: ['auth'],
 });
 export default {
-
-  setup() {
-    const templateCards = [{
-      name: 'template',
-      subject: 'card'
-    },
-      {
-        name: 'template',
-        subject: 'card'
-      },
-      {
-        name: 'template',
-        subject: 'card'
-      },];
-
-    return {
-      templateCards
-    }
-  }
 }
 </script>
 

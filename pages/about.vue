@@ -3,12 +3,7 @@
    <div>
      <span>Contact:</span> <span>kristof.krasznai95@gmail.com</span>
    </div>
-   <div>
-     <span>Contact:</span> <span>kristof.krasznai95@gmail.com</span>
-   </div>
-   <div>
-     <span>Contact:</span> <span>kristof.krasznai95@gmail.com</span>
-   </div>
+
  </section>
 </template>
 

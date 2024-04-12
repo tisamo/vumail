@@ -4,7 +4,7 @@
       <h1>Scheduled Emails</h1>    <div class="write-mail"><nuxt-link to="/email">Write Email</nuxt-link></div>
     </div>
     <section>
-      <TemplateCard v-for="(c, index) in templateCards"  :key="index" :cardData="c"/>
+      <TemplateCard v-for="(c, index) in tasks"  :key="index" :cardData="c"/>
     </section>
   </div>
 </template>
@@ -16,7 +16,7 @@ definePageMeta({
 });
 export default {
   setup() {
-    const tasks = [];
+    const tasks = ref([]);
     const templateCards = [{
       name: 'template',
       subject: 'card'
@@ -44,7 +44,8 @@ export default {
        this.tasks = res.data.map((t)=>{
          return{
            id: t._id,
-           title: t.title,
+           name: t.body,
+           subject: t.title
          }
        });
      }).catch((err)=>{
